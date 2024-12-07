@@ -1,0 +1,8 @@
+1     BOJ             HORROR          bub             A               HR              1    
+2     BOJO            HORROR          bub             A               HR              1    
+3     BOJ             HORROR          bub             A               HR              1    
+4     BOJ             HORROR          bub             A               HR              1    
+5     BOJ             HORROR          bub             A               HR              1    
+6     BOJ             HORROR          bub             A               HR              1    
+7     BOJ             HORROR          bub             A               HR              1    
+8     BOJ             HORROR          biji            A               HR              1    
