@@ -2,9 +2,9 @@
 
 typedef struct {
 	int no;
-	char *nama;
-	char *email;
-	char *password;
+	char nama[50];
+	char email[50];
+	char password[50];
 	bool is_admin;
 } User;
 
@@ -17,31 +17,52 @@ typedef struct {
 typedef struct {
 	int nomor;
 	char id[10];
-	char judul[50];
-	char genre[20];
-	char penerbit[50];
+	char judul[250];
+	char jenis[100];
+	char penerbit[100];
 	int jml;
 	char rak[10];
+	int noId;
 } Buku;
 
 typedef struct {
 	int nomor;
+	char id[6];
 	char nama[50];
 	char email[50];
 	Date peminjaman;
 	Date pengembalian;
+	int denda;
 } Peminjaman;
 
+
+
+
 void PrintTitle(char *text);
-int DashBoard();
-int LoginAdmin();
+int Dashboard();
+void Register();
+int Admin();
+int DashboardAdmin(bool is_admin);
+int GetLastID(const char *filename);
+int Login();
+int DaftarBuku(bool is_admin);
+int DaftarPeminjaman(bool is_admin);
+void updatePeminjaman(Peminjaman *p);
+void CreatePeminjaman(Peminjaman *p);
+void deletePeminjaman();
+void ListPeminjaman();
+int selisihHari(Date d1, Date d2);
+int EmailExists(const char *filename, const char *email);
+int IsUniqueID(const char *filename, const char *id);
+int GenerateRandomNumber();
+void saveBuku(Buku *b);
+void tambahBuku(Buku *b);
+int kNomor(FILE *file);
+void toUpperStr(char *str);
+int dupes(FILE *file, Buku *b);
+void printIsiFile(Buku *b);
+void trim(char *str);
+void updateBuku(Buku *b);
+void deleteBuku(Buku *b);
 
-// Fungsi Tambah Buku (Baru) NOMOR INCREMENT (akan terus bertambah (ambil nomor terakhir dan ditambah 1))
-
-// Fungsi Menampilkan semua buku & Search Bar (Optional)
-
-/* Fungsi update Buku (Helper: Get Data Buku By ID, Ambil data subvar, simpen di temp, read mau update apa (bisa apa aja judul, penerbit, jumlah buku) 
-dipilih dari nomor kolom pake selection CONTOH: kalau admin pilih 1 maka akan update judul dan sterusnya. */
-
-/* Fungsi Delete Buku. NOTE: Nomor bisa diabaikan jika tidak berurut, tetapi lebih baik kalau diurutkan ulang */
 

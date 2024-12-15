@@ -1,0 +1,4 @@
+1    	 BG252	 SI IMUT                  	 BIOGRAFI  	 Ngawi Books    	 1	 A
+2    	 NV672	 AMBARUWO                 	 NOVEL     	 Ngawi Books    	 1	 B
+3    	 XX912	 INI JUDUL                	 INI JENIS 	 Ini Penerbit   	 1	 N
+4    	 XX261	 O                        	 O         	 o              	 1	 o
